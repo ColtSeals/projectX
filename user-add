@@ -1,5 +1,5 @@
 #!/bin/bash
-# Created by http://www.vps-murah.net
+# Edited by @ColtSeals
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
@@ -14,7 +14,7 @@ clear
 read -p "Nome de Usuario : " username
 egrep "^$username" /etc/passwd >/dev/null
 if [ $? -eq 0 ]; then
-echo "Username sudah ada di VPS anda"
+echo "Nome de usuario muito pequeno"
 exit 0
 else
 read -p "Senha do Usuario : " password
@@ -52,8 +52,8 @@ usermod -e  $tanggal_expired $username
   echo "   Host            : $MYIP"
   echo "   Nome            : $username"
   echo "   Senha           : $password"
-  echo "   Data Uso        : $masa_aktif Hari"
-  echo "   Expiração       : $tanggal_expired_display"
+  echo "   Validade        : $masa_aktif Dias"
+  echo "   Data Expiração  : $tanggal_expired_display"
   echo "   Porta           : 22,80,109,143,443"
   echo "--------------------------------------"
   echo " "

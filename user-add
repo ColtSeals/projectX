@@ -11,7 +11,7 @@ echo -e "${green}Permissão Aceita...${NC}"
 sleep 2
 clear
 
-read -p "Nome de Usuario : " username
+read -p "Nome de Usuario OPENVPN & SSH : " username
 egrep "^$username" /etc/passwd >/dev/null
 if [ $? -eq 0 ]; then
 echo "Nome de usuario muito pequeno"

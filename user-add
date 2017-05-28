@@ -4,11 +4,11 @@ red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
 echo "Conectando ao NerdologiaVPS..."
-sleep 0.2
+sleep 2
 echo "Checando Permissão..."
-sleep 0.3
+sleep 3
 echo -e "${green}Permissão Aceita...${NC}"
-sleep 1
+sleep 2
 clear
 
 read -p "Nome de Usuario : " username
